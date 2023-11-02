@@ -19,5 +19,7 @@ from music_app.swagger import swagger_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('music_api.urls'))
+    path('api/', include('music_api.urls')),
+    path('auth/', include('dj_rest_auth.urls')),
+    path('auth/register/', include('dj_rest_auth.registration.urls')),
 ] + swagger_urls

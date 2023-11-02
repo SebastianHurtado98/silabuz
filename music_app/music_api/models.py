@@ -9,15 +9,14 @@ class Artist(models.Model):
 class Album(models.Model):
     name = models.CharField(max_length=100)
     year = models.IntegerField()
-    artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
+    artist = models.ForeignKey(Artist, on_delete=models.CASCADE, related_name='albums')
 
     def __str__(self):
         return f"{self.name} ({self.year})"
 
 class Song(models.Model):
     name = models.CharField(max_length=100)
-    album = models.ForeignKey(Album, on_delete=models.CASCADE)
-    artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
+    album = models.ForeignKey(Album, on_delete=models.CASCADE, related_name='songs')
 
     def __str__(self):
         return self.name
