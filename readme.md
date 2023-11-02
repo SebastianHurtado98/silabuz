@@ -44,18 +44,18 @@ Es recomendable también que uses `virtualenv` para crear un entorno virtual par
 
 Ejecuta las migraciones para configurar la base de datos:
 
-    ```bash
-    python manage.py migrate
-    ```
-
+```bash
+python manage.py migrate
+```
 
 ### Ejecutar el servidor
 
 Inicia el servidor de desarrollo:
 
-    ```bash
-    python manage.py runserver
-    ```
+
+```bash
+python manage.py runserver
+```
 
 ### Documentación
 
