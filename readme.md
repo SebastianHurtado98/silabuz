@@ -57,6 +57,15 @@ Inicia el servidor de desarrollo:
 python manage.py runserver
 ```
 
+### Carga la base de datos de prueba
+
+Inicia el servidor de desarrollo:
+
+
+```bash
+python manage.py seed_db
+```
+
 ### Documentación
 
 Accede a la documentación: [Aquí](http://127.0.0.1:8000/swagger/).
